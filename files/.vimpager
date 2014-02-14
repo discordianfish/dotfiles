@@ -1,0 +1,2 @@
+%sm/\e.\{-}m//g
+set ft=diff
