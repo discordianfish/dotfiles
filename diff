@@ -1,0 +1,3 @@
+#!/bin/sh
+
+diff -ur files/ ~/|grep -v '^Only in' | vim -R -
