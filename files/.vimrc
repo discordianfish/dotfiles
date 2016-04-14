@@ -12,6 +12,7 @@ Plugin 'VundleVim/Vundle.vim'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'fatih/vim-go'
 Bundle 'elzr/vim-json'
+Bundle 'tpope/vim-sleuth'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -21,13 +22,10 @@ highlight OverLength ctermfg=Gray guibg=#FFD9D9
 match OverLength /\%101v.*/
 
 let g:gitgutter_enabled = 1
-"autocmd FileType go autocmd BufWritePre <buffer> Fmt
-
-set tabstop=2
-set shiftwidth=2
-set expandtab
+let g:go_fmt_command = "goimports"
 
 autocmd FileType go setlocal ai ts=8 sw=8 noexpandtab
+au BufRead,BufNewFile *.md setlocal textwidth=80
 
 set synmaxcol=120
 
