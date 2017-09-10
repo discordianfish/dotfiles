@@ -1,5 +1,0 @@
-URxvt.saveLines: 50000
-URxvt*background: Black
-URxvt*foreground: White
-URxvt*foreground: White
-URxvt*scrollBar: False
