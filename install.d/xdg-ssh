@@ -1,0 +1,4 @@
+#!/bin/sh
+
+xdg-mime install $HOME/.local/share/applications/fish-ssh.desktop
+xdg-mime default fish-ssh.desktop x-scheme-handler/ssh

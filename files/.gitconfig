@@ -3,3 +3,5 @@
 	name = Johannes 'fish' Ziemke
 [core]
 	editor = vim
+[push]
+	default = simple

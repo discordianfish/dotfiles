@@ -1,0 +1,2 @@
+mkdir -p $HOME/opt/go
+curl -L 
