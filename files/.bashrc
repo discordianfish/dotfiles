@@ -9,6 +9,10 @@ alias ls='ls --color=auto'
 # Control Center
 alias control-center='XDG_CURRENT_DESKTOP=Unity7 unity-control-center'
 
+# Various
+alias my-ip='dig +short myip.opendns.com @resolver1.opendns.com'
+
+
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 

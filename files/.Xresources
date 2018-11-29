@@ -5,6 +5,7 @@ URxvt*scrollBar: False
 XTerm*locale: true
 XTerm*faceName: Inconsolata:size=15
 XTerm*savelines: 16384
+URxvt.print-pipe: "cat > /dev/null"
 
 !!! Solarized
 ! Solarized color scheme for the X Window System
