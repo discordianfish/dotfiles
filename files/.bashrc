@@ -23,4 +23,4 @@ if [ -f "$HOME/opt/google-cloud-sdk/path.bash.inc" ]; then source "$HOME/opt/goo
 if [ -f "$HOME/opt/google-cloud-sdk/completion.bash.inc" ]; then source "$HOME/opt/google-cloud-sdk/completion.bash.inc"; fi
 
 . /etc/bash_completion
-source <(kubectl completion bash)
+which kubectl > /dev/null && source <(kubectl completion bash)
