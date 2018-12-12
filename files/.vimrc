@@ -20,6 +20,8 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'google/vim-jsonnet'
+Plugin 'ianks/vim-tsx'
+Plugin 'leafgarland/typescript-vim'
 
 let g:jsx_ext_required = 0 " Do not require jsx suffix for vim-jsx
 
@@ -35,8 +37,6 @@ let g:go_fmt_command = "goimports"
 autocmd FileType go setlocal ai ts=8 sw=8 noexpandtab
 autocmd BufRead,BufNewFile *.md setlocal textwidth=80
 autocmd BufRead,BufNewFile *.scala set filetype=scala
-autocmd BufRead,BufNewFile *.ts set filetype=javascript
-
 
 set synmaxcol=120
 
@@ -57,4 +57,7 @@ match OverLength /\%81v.*/
 
 au BufRead,BufNewFile *.jsonnet,*.libjsonnet,*.libsonnet set filetype=jsonnet syntax=jsonnet
 
+" FIXME: Why is this needed?
+au BufRead,BufNewFile *.ts set filetype=typescript
+au BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 let g:neocomplete#enable_auto_select = 1
