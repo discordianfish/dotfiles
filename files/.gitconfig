@@ -3,5 +3,9 @@
 	name = Johannes 'fish' Ziemke
 [core]
 	editor = vim
+	precomposeunicode = true
+	sparseCheckout = true
 [push]
-	default = simple
+	default = current
+[rerere]
+	enabled = true
