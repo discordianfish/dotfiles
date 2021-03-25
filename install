@@ -2,4 +2,7 @@
 set -euo pipefail
 
 rsync -av files/ $HOME/
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  rsync -av files-darwin/ $HOME/
+fi
 run-parts install.d/

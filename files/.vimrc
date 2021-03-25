@@ -62,7 +62,10 @@ au BufRead,BufNewFile *.ts set filetype=typescript
 au BufRead,BufNewFile *.tsx set filetype=typescript.tsx
 let g:neocomplete#enable_auto_select = 1
 
-let g:jsonnet_fmt_on_save = 0
 syntax enable
 
 set maxmempattern=10000
+
+set clipboard=unnamed
+
+let g:go_rename_command = 'gopls'
