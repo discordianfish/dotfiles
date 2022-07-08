@@ -1,8 +1,11 @@
 #!/bin/bash
 set -euo pipefail
 
-rsync -av files/ $HOME/
+rsync -av files/ "$HOME/"
 if [[ "$(uname -s)" == "Darwin" ]]; then
-  rsync -av files-darwin/ $HOME/
+  rsync -av files-darwin/ "$HOME/"
 fi
-run-parts install.d/
+for f in install.d/*; do
+  echo " - $f"
+  /bin/bash "$f"
+done

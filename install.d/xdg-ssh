@@ -1,4 +1,5 @@
 #!/bin/sh
+[[ "$(uname -s)" == "Darwin" ]] && exit 0
 
 xdg-mime install $HOME/.local/share/applications/fish-ssh.desktop
 xdg-mime default fish-ssh.desktop x-scheme-handler/ssh

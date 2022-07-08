@@ -1,1 +1,2 @@
+[[ "$(uname -s)" == "Darwin" ]] && exit 0
 update-alternatives --set x-terminal-emulator /usr/bin/xterm
