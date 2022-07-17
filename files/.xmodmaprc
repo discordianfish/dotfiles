@@ -1,6 +1,0 @@
-remove mod4 = Super_L
-add control = Super_L
-! Swap caps lock and escape
-clear Lock
-keycode 0x42 = Escape
-
